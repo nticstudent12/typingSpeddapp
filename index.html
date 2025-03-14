@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game">
+        <h1 class="name">Speed Typing Game</h1>
+        <div class="container">
+            <div class="message">
+                Difficulty Level: 
+                <select id="difficulty" class="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <div class="time-info">
+                    Time remaining: <span class="seconds"></span> seconds
+                </div>
+            </div>
+            <button class="start">Start Game</button>
+            <div class="quote-display"></div>
+            <textarea class="quote-input" autofocus></textarea>
+            <div class="stats">
+                <div class="time">Time left: <span></span> seconds</div>
+                <div class="score">Score: <span class="got">0</span> / <span class="total"></span></div>
+                <div class="wpm">WPM: <span>0</span></div>
+            </div>
+            <div class="finish"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
